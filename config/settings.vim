@@ -34,6 +34,7 @@ set statusline+=\ /\ " Separator
 set statusline+=Column\ 
 set statusline+=%c 
 
+set scrolloff=100 " Keep the cursor in the middle
 
 " }}}
 
