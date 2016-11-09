@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/mgautier/.oh-my-zsh'
-let g:netrw_dirhist_2='/Users/mgautier/Travail/repiscine/ex13'
-let g:netrw_dirhist_3='/Users/mgautier/Travail/repiscine/ex14'
-let g:netrw_dirhist_4='/Users/mgautier/Travail/repiscine-rendu/ex06'
-let g:netrw_dirhist_5='/Users/mgautier/Travail/repiscine-rendu/ex14'
-let g:netrw_dirhist_6='/Users/mgautier/Travail/repiscine-rendu/ex09'
-let g:netrw_dirhist_7='/Users/mgautier/.vim/.git/info'
