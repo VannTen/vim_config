@@ -14,7 +14,7 @@ nnoremap <leader>w :write<CR>
 nnoremap <leader>aw :wall<CR>
 
 nnoremap <leader>sv :source $MYVIMRC<cr>:nohlsearch<cr>
-nnoremap <F1> :call Insert_header_42()<cr>
+nnoremap <F2> :call Insert_header_42()<cr>
 
 noremap <Up> <nop>
 noremap <Down> <nop>
@@ -54,7 +54,7 @@ iabbrev mg Max Gautier
 
 " }}}
 
-    "Movement ----------------{{{
+"Movement ----------------{{{
 
 nnoremap j gj
 nnoremap k gk
@@ -65,10 +65,10 @@ nnoremap H ^
 
 "Operators -------------------------------------{{{
 
-onoremap in) :execute "normal! ?)\r"<Left>vi(<cr><esc>:nohlsearch<cr>
-onoremap in( :execute "normal! /(\r"<Left>vi(<cr><esc>:nohlsearch<cr>
-onoremap in} :execute "normal! ?}\r"<Left>vi{<cr><esc>:nohlsearch<cr>
-onoremap in{ :execute "normal! /{\r"<Left>vi{<cr><esc>:nohlsearch<cr>
+onoremap in) :execute "normal! ?)\r"<Left>vi(<cr><esc>:nohlsearch<cr>i<Right>
+onoremap in( :execute "normal! /(\r"<Left>vi(<cr><esc>:nohlsearch<cr>i<Right>
+onoremap in} :execute "normal! ?}\r"<Left>vi{<cr><esc>:nohlsearch<cr>i<Right>
+onoremap in{ :execute "normal! /{\r"<Left>vi{<cr><esc>:nohlsearch<cr>i<Right>
 "onoremap in" :execute "normal! ?\"\r"<Left>vi\"<cr><esc>:nohlsearch<cr>
 "onoremap in" :execute "normal! /\"\r"<Left>vi\"<cr><esc>:nohlsearch<cr>
 "onoremap in' :execute "normal! ?'\r"<Left>vi'<cr><esc>:nohlsearch<cr>
@@ -80,20 +80,20 @@ onoremap in{ :execute "normal! /{\r"<Left>vi{<cr><esc>:nohlsearch<cr>
 "C Files -----------------------------------------{{{
 
 augroup C-Bindings
-    autocmd!
-    "autocmd FileType c nnoremap <buffer> <localleader>c
-    "autocmd Filetype c iabbrev <buffer>
-    "autocmd FileType c iabbrev <buffer> ( ()<Left>
-    "autocmd FileType c inoremap { {<CR><CR>}<Up>
-    "autocmd Filetype c inoremap <buffer> main int main(int argc, char *argv[])<cr>{<cr>}<Up>
+	autocmd!
+	"autocmd FileType c nnoremap <buffer> <localleader>c
+	"autocmd Filetype c iabbrev <buffer>
+	"autocmd FileType c iabbrev <buffer> ( ()<Left>
+	"autocmd FileType c inoremap { {<CR><CR>}<Up>
+	"autocmd Filetype c inoremap <buffer> main int main(int argc, char *argv[])<cr>{<cr>}<Up>
 augroup END
 " }}}
 
 "VIM files --------------{{{
 augroup VIM-Bindings
-    autocmd!
-    autocmd FileType vim let maplocalleader = "'"
-    autocmd FileType vim nnoremap <buffer> <localleader>c ^i"<esc>
-    "autocmd FileType vim nnoremap <buffer> <localleader>iC
+	autocmd!
+	autocmd FileType vim let maplocalleader = "'"
+	autocmd FileType vim nnoremap <buffer> <localleader>c ^i"<esc>
+	"autocmd FileType vim nnoremap <buffer> <localleader>iC
 augroup END
 " }}}
