@@ -65,7 +65,7 @@ nnoremap H ^
 
 "Operators -------------------------------------{{{
 
-onoremap in) :execute "normal! ?)\r"<Left>vi(<cr><esc>:nohlsearch<cr>i<Right>
+onoremap in) :execute "normal! ?)\r:nohlsearch\r"<CR><Left>vi(
 onoremap in( :execute "normal! /(\r"<Left>vi(<cr><esc>:nohlsearch<cr>i<Right>
 onoremap in} :execute "normal! ?}\r"<Left>vi{<cr><esc>:nohlsearch<cr>i<Right>
 onoremap in{ :execute "normal! /{\r"<Left>vi{<cr><esc>:nohlsearch<cr>i<Right>
@@ -92,8 +92,12 @@ augroup END
 "VIM files --------------{{{
 augroup VIM-Bindings
 	autocmd!
-	autocmd FileType vim let maplocalleader = "'"
-	autocmd FileType vim nnoremap <buffer> <localleader>c ^i"<esc>
 	"autocmd FileType vim nnoremap <buffer> <localleader>iC
 augroup END
 " }}}
+
+"Comments ---------------{{{
+augroup Comments-Bindings
+	autocmd!
+	autocmd FileType vim nnoremap <buffer> <localleader>c ^i"<esc>
+	autocmd FileType nnoremap <buffer> <localleader>c ^i//<esc>
