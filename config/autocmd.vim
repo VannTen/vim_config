@@ -43,6 +43,6 @@ augroup END
 
 augroup Comment-Commands
 	autocmd!
-	autocmd Filetype c setlocal comments=sr:/*,mb:**,ex:*/
+	autocmd Filetype c setlocal comments=sr:/*,mb:**,ex:*/ "Change the comments auto format - for 42 norm
 augroup END
 " }}}
