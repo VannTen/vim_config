@@ -43,8 +43,6 @@ augroup END
 
 augroup Comment-Commands
 	autocmd!
-	autocmd Filetype c autocmd BufWritePre <buffer> %s#^ \* #** #e " Format the comments according to 42 norm.
-	autocmd Filetype c autocmd BufWritePre <buffer> %s#^ \*/#*/#e " Format the the closing character of comments according to 42 norm.
-	autocmd Filetype c autocmd BufWritePre <buffer> %s#^ \*{2}#**#e " Format the the closing character of comments according to 42 norm.
+	autocmd Filetype c setlocal comments=sr:/*,mb:**,ex:*/
 augroup END
 " }}}
