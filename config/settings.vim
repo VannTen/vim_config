@@ -36,6 +36,13 @@ set statusline+=%l\ of\ %L "Line number/Number of lines in file
 set statusline+=\ /\ " Separator
 set statusline+=Column\ 
 set statusline+=%c 
+hi StatusLine ctermbg=magenta ctermfg=black
+
+"Indicate active split with status line
+augroup activeSplitStatusLine
+	autocmd WinEnter * hi StatusLine ctermbg=magenta ctermfg=black
+	autocmd WinLeave * hi StatusLine ctermbg=none ctermfg=white
+augroup END
 
 set scrolloff=100 " Keep the cursor in the middle
 
