@@ -66,6 +66,8 @@ nnoremap k gk
 inoremap <leader>o <esc>jA
 nnoremap L $
 nnoremap H ^
+
+nnoremap GG gg=G``
 " }}}
 
 "Operators -------------------------------------{{{
