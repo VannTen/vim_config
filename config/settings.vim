@@ -17,7 +17,7 @@ set cursorline
 set mouse=a
 set wildmenu 	" visual autocomplete for command menu
 set showmatch	" higlhlight matching () and the like
-set number      " Put lines numbers on
+set relativenumber      " Put lines numbers on
 set background=dark "Colors config
 colorscheme elflord
 syntax on       " Enables syntax coloring
