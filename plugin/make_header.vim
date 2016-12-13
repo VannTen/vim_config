@@ -40,8 +40,8 @@ autocmd	BufNewFile	*.hpp			call	Insert_header_42()
 autocmd	BufWritePre	*.hpp			call	Update_header_42()
 
 " 			Makefile autocmd
-autocmd	BufNewFile	Makefile	call	Insert_header_42_Makefile()
-autocmd	BufWritePre	Makefile	call	Update_header_42_Makefile()
+autocmd	BufNewFile	Makefile,Rules.mk	call	Insert_header_42_Makefile()
+autocmd	BufWritePre	Makefile,Rules.mk	call	Update_header_42_Makefile()
 
 augroup END
 
