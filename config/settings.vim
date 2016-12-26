@@ -17,6 +17,7 @@ set cursorline
 set mouse=a
 set wildmenu 	" visual autocomplete for command menu
 set showmatch	" higlhlight matching () and the like
+set number		" The two number allow hybrid mode on version 7.4 and more. Otherwise, just relative number
 set relativenumber      " Put lines numbers on
 set background=dark "Colors config
 colorscheme elflord
