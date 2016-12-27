@@ -51,6 +51,7 @@ vnoremap <leader>( c()<esc>P
 vnoremap <leader>[ c[]<esc>P
 
 inoremap <c-u> <esc>viwU<esc>i
+nnoremap <c-u> viwU
 " }}}
 
 "Frequent Abbrevations ----------------{{{
