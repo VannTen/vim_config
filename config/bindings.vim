@@ -49,6 +49,7 @@ vnoremap <leader>' c''<esc>P
 vnoremap <leader>" c""<esc>P
 vnoremap <leader>( c()<esc>P
 vnoremap <leader>[ c[]<esc>P
+vnoremap <leader>{ c{}<esc>Pgg=G``
 
 inoremap <c-u> <esc>viwU<esc>i
 nnoremap <c-u> viwU
