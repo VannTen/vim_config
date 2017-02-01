@@ -64,6 +64,12 @@ set foldlevelstart=10   " control fold level
 set foldmethod=syntax
 " }}}
 
+" Splits -----------{{{
+
+set splitbelow
+set splitright
+" }}}
+
 "Backups and undos ----------------{{{
 
 set backup

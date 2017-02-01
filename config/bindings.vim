@@ -84,6 +84,15 @@ onoremap in{ :execute "normal! /{\r"<Left>vi{<cr><esc>:nohlsearch<cr>i<Right>
 "onoremap in" :execute "normal! /'\r"<Left>vi'<cr><esc><esc>:nohlsearch<cr>
 " }}}
 
+" Split manipulation --------------{{{
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+
+" }}}
+
 "File specific bindings
 
 "C Files -----------------------------------------{{{
