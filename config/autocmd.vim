@@ -28,6 +28,7 @@ augroup END
 augroup C-commands
 	autocmd!
 	autocmd Filetype c,cpp setlocal colorcolumn=80 " Display column limit
+	autocmd Filetype c setlocal foldlevel=0
 augroup END
 " }}}
 
