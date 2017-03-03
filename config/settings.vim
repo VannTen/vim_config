@@ -5,6 +5,7 @@ filetype plugin indent on
 
 " Indentation settings --------------------------{{{
 set tabstop=4       " number of visual spaces per TAB
+set shiftwidth=4	" number of spaces per indent
 set softtabstop=4   " number of spaces in TAB when editing
 set noexpandtab
 set autoindent
@@ -39,11 +40,11 @@ set statusline+=%l\ of\ %L "Line number/Number of lines in file
 set statusline+=\ /\ " Separator
 set statusline+=Column\ 
 set statusline+=%c 
-hi StatusLine ctermbg=magenta ctermfg=black
+hi StatusLine ctermbg=red ctermfg=black
 
 "Indicate active split with status line
 augroup activeSplitStatusLine
-	autocmd WinEnter * hi StatusLine ctermbg=magenta ctermfg=black
+	autocmd WinEnter * hi StatusLine ctermbg=red ctermfg=black
 	autocmd WinLeave * hi StatusLine ctermbg=none ctermfg=white
 augroup END
 
