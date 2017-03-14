@@ -45,6 +45,6 @@ augroup END
 augroup Comment-Commands
 	autocmd!
 	autocmd Filetype c,cpp setlocal comments=sr:/*,mb:**,ex:*/ "Change the comments auto format - for 42 norm
-	autocmd FileType c,cpp autocmd BufWritePre <buffer> %s/^* /** / " Put comments into correct format
+	autocmd FileType c,cpp autocmd BufWritePre <buffer> %s/^* /** /e " Put comments into correct format
 augroup END
 " }}}
