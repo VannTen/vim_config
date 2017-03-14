@@ -118,4 +118,6 @@ augroup END
 augroup Comments-Bindings
 	autocmd!
 	autocmd FileType vim nnoremap <buffer> <localleader>c ^i"<esc>
-	autocmd FileType nnoremap <buffer> <localleader>c ^i//<esc>
+	autocmd FileType c, cpp nnoremap <buffer> <localleader>c ^i//<esc>
+augroup END
+" }}}
