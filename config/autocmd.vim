@@ -27,7 +27,7 @@ augroup END
 " C files -------{{{
 augroup C-commands
 	autocmd!
-	autocmd Filetype c,cpp setlocal colorcolumn=80 " Display column limit
+	autocmd Filetype c,cpp,make setlocal colorcolumn=80 " Display column limit
 	autocmd Filetype c setlocal foldlevel=0
 augroup END
 " }}}
