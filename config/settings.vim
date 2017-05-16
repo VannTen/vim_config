@@ -1,7 +1,6 @@
 "VIM basic settings 
 "That file is read by vimrc in the .vim directory
 
-filetype plugin indent on
 
 " Indentation settings --------------------------{{{
 set tabstop=4       " number of visual spaces per TAB

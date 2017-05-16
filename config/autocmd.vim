@@ -19,6 +19,9 @@ augroup Git
 	autocmd!
 	autocmd Filetype gitcommit setlocal textwidth=72  " Format the git commits nicely
 augroup END
+
+" }}}
+
 " Handling whitespaces and tabs--------{{{
 
 augroup Spaces-commands
