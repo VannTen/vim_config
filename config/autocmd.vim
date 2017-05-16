@@ -49,6 +49,15 @@ augroup Indent-Commands
 augroup END
 " }}}
 
+" Folding file specific --------{{{
+
+augroup Folding
+	autocmd!
+	autocmd BufReadPre *Srcs.mk setlocal foldmethod=indent
+	autocmd BufReadPre *Srcs.mk setlocal foldlevel=0
+augroup END
+" }}}
+
 " Comment ----------{{{
 
 augroup Comment-Commands
