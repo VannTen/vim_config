@@ -26,7 +26,7 @@ noremap <Right> <nop>
 noremap <Left> <nop>
 
 nnoremap <CR> o<esc>
-nnoremap <leader><CR> O<esc>
+nnoremap <C-CR> O<esc>
 nnoremap <leader>hl :nohlsearch<CR>
 nnoremap K i<CR><esc>
 
@@ -118,4 +118,6 @@ augroup END
 augroup Comments-Bindings
 	autocmd!
 	autocmd FileType vim nnoremap <buffer> <localleader>c ^i"<esc>
-	autocmd FileType nnoremap <buffer> <localleader>c ^i//<esc>
+	autocmd FileType c,cpp nnoremap <buffer> <localleader>c ^i//<esc>
+augroup END
+" }}}

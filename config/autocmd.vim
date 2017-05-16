@@ -33,7 +33,7 @@ augroup END
 " C files -------{{{
 augroup C-commands
 	autocmd!
-	autocmd Filetype c,cpp setlocal colorcolumn=80 " Display column limit
+	autocmd Filetype c,cpp,make setlocal colorcolumn=80 " Display column limit
 	autocmd Filetype c setlocal foldlevel=0
 augroup END
 " }}}
@@ -51,5 +51,6 @@ augroup END
 augroup Comment-Commands
 	autocmd!
 	autocmd Filetype c,cpp setlocal comments=sr:/*,mb:**,ex:*/ "Change the comments auto format - for 42 norm
+	autocmd FileType c,cpp autocmd BufWritePre <buffer> %s/^* /** /e " Put comments into correct format
 augroup END
 " }}}
